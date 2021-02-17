@@ -18,7 +18,7 @@ int main(int argc, char *argv[]) {
           "Unidentified command.\nUse -c for compress and -u for uncompress.");
     }
 
-    Huffman a;
+    Huffman huffman;
     string infile;
     string outfile;
 
@@ -34,9 +34,9 @@ int main(int argc, char *argv[]) {
           "file.");
     }
     if (strcmp(argv[1], "-c") == 0) {
-      a.archiving(infile, outfile);
+      huffman.archiving(infile, outfile);
     } else {
-      a.decompression(infile, outfile);
+      huffman.decompression(infile, outfile);
     }
   } catch (const exception *e) {
     cerr << e->what();
