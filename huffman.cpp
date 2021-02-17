@@ -10,7 +10,7 @@ using namespace std;
 namespace {
 size_t const num_chars = 256;
 size_t const num_bits = 8;
-}
+}  // namespace
 
 void Huffman::archiving(string const &infile, string const &outfile) {
   ifstream in(infile, ifstream::binary);

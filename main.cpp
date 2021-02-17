@@ -21,7 +21,7 @@ int main(int argc, char *argv[]) {
     Huffman a;
     string infile;
     string outfile;
-	
+
     if (strcmp(argv[2], "-f") == 0 && strcmp(argv[4], "-o") == 0) {
       infile = argv[3];
       outfile = argv[5];
